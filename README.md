@@ -9,10 +9,12 @@
 	- Method Source
 	- CSV source
 	- CSV File Source
+	- Arguments source (ArgumentsProvider interface)
 
 **Java Tech stacks**
 - Storing a Roman letters in Enum
 - Passing Arguments in method with a help of Arguments.of()  [junit]
+- Stream.of("I", "V", "X").map(Arguments::of) to map Arguments.of() function to each arguments of stream
 
 **Advice**
 - @Tag can be used twice in the test

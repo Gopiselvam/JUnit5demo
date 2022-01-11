@@ -55,4 +55,10 @@ public class ParameterizedTests {
     public void multiplicationTestWithCSVfile(int a, int b, int result){
         Assertions.assertEquals(result, calculator.multiplication(a,b));
     }
+
+    @ArgumentsSource(MyArgumentsProvider.class)
+    @ParameterizedTest
+    public void romanNumberTestWithArgumentProvider(String input){
+        Assertions.assertTrue(RomanNumeral.contains(input));
+    }
 }
