@@ -12,6 +12,7 @@
 
 **Java Tech stacks**
 - Storing a Roman letters in Enum
+- Passing Arguments in method with a help of Arguments.of()  [junit]
 
 **Advice**
 - @Tag can be used twice in the test
