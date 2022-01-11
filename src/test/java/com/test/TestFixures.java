@@ -12,7 +12,7 @@ public class TestFixures {
     private int actual;
 
     @BeforeAll
-    static void setUpBeforeClass(TestInfo info){
+    private static void setUpBeforeClass(TestInfo info){
         logger.info(info.getDisplayName());
     }
 
