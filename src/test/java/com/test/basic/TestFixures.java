@@ -1,4 +1,4 @@
-package com.test;
+package com.test.basic;
 
 import com.test.service.Calculator;
 import org.apache.log4j.Logger;

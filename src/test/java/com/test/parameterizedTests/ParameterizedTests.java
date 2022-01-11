@@ -1,4 +1,4 @@
-package com.test;
+package com.test.parameterizedTests;
 
 import com.test.service.Calculator;
 import com.test.service.RomanNumeral;

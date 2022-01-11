@@ -1,4 +1,4 @@
-package com.test;
+package com.test.parameterizedTests;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.provider.Arguments;

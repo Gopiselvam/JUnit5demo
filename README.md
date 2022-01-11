@@ -11,6 +11,7 @@
 	- CSV File Source
 	- Arguments source (ArgumentsProvider interface)
 6. Dynamic Test
+7. Exception and Timeout testing
 
 
 **Java Tech stacks**
@@ -23,3 +24,4 @@
 - @Tag can be used twice in the test
 - use the proper version mentioned in pom.xml for using @RunWith(JUnitPlatform.class)
 - BeforeAll and AfterALl methods should be static
+- @BeforeEach will gets executed only once for @TestFactory

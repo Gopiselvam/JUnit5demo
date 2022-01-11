@@ -49,4 +49,12 @@ public class Calculator {
 		return num;
 	}
 
+	public void delay(long time) {
+		try {
+			Thread.sleep(time * 1000);
+		} catch (InterruptedException e) {
+			System.err.println("Interrupted Exception");
+		}
+	}
+
 }

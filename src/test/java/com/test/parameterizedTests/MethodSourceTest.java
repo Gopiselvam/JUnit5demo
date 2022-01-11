@@ -1,4 +1,4 @@
-package com.test;
+package com.test.parameterizedTests;
 
 import com.test.service.Calculator;
 import org.junit.jupiter.api.Assertions;
@@ -58,7 +58,7 @@ public class MethodSourceTest {
         Assertions.assertEquals(output, input);
     }
 
-    @MethodSource("com.test.ParameterizedTests#multiplicationProvider")
+    @MethodSource("com.test.parameterizedTests.ParameterizedTests#multiplicationProvider")
     @ParameterizedTest
     public void testMultiplicationProviderFromOtherClass(int a, int b, int result){
         Assertions.assertEquals(result, calculator.multiplication(a,b));

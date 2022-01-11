@@ -1,4 +1,4 @@
-package com.test;
+package com.test.tags;
 
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.platform.suite.api.IncludePackages;

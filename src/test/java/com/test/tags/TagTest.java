@@ -1,4 +1,4 @@
-package com.test;
+package com.test.tags;
 
 import com.test.service.Calculator;
 import org.junit.BeforeClass;
