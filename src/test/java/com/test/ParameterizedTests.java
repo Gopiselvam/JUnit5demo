@@ -49,4 +49,10 @@ public class ParameterizedTests {
     public void divisionTestWithCSV(int a , int b, int result){
         Assertions.assertEquals(result, calculator.division(a,b));
     }
+
+    @CsvFileSource(resources = "/input.csv", delimiter = ';')
+    @ParameterizedTest
+    public void multiplicationTestWithCSVfile(int a, int b, int result){
+        Assertions.assertEquals(result, calculator.multiplication(a,b));
+    }
 }
