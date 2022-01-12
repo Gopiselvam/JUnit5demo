@@ -16,6 +16,7 @@
 9. Conditional testing
 10. Repeated tests
 11. Nested Tests
+12. Test Interface
 
 **Java Tech stacks**
 - Storing a Roman letters in Enum
@@ -30,3 +31,4 @@
 - @BeforeEach will gets executed only once for @TestFactory
 - Disabling Test at class level diables all of the Test methods inside it
 - for n repetition, @BeforeEach method print n number of times
+- in @Nested class sinario we can use the same method name outer class as well as inner class
