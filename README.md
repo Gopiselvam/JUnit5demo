@@ -17,6 +17,10 @@
 10. Repeated tests
 11. Nested Tests
 12. Test Interface
+13. Dependency Injection
+	- TestInfoParameterResolver
+	- RepetitionInfoParameterResolver
+	- TestReporterParameterResolver
 
 **Java Tech stacks**
 - Storing a Roman letters in Enum
