@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.*;
 
-import javax.xml.bind.annotation.XmlInlineBinaryData;
-
+@EnabledOnOs({OS.WINDOWS, OS.MAC})
 public class ConditionalTesting {
 
     Calculator calculator = new Calculator();
