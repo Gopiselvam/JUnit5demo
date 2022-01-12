@@ -14,7 +14,7 @@
 7. Exception and Timeout testing
 8. Extensions
 9. Conditional testing
-
+10. Repeated tests
 
 **Java Tech stacks**
 - Storing a Roman letters in Enum
@@ -27,3 +27,5 @@
 - use the proper version mentioned in pom.xml for using @RunWith(JUnitPlatform.class)
 - BeforeAll and AfterALl methods should be static
 - @BeforeEach will gets executed only once for @TestFactory
+- Disabling Test at class level diables all of the Test methods inside it
+- for n repetition, @BeforeEach method print n number of times
