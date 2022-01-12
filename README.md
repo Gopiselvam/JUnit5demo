@@ -13,7 +13,7 @@
 6. Dynamic Test
 7. Exception and Timeout testing
 8. Extensions
-
+9. Conditional testing
 
 
 **Java Tech stacks**
