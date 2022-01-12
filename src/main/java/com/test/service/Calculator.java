@@ -52,6 +52,7 @@ public class Calculator {
 	public void delay(long time) {
 		try {
 			Thread.sleep(time * 1000);
+			System.out.println("LINE AFTER TIMEOUT");
 		} catch (InterruptedException e) {
 			System.err.println("Interrupted Exception");
 		}

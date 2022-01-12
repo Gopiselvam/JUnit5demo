@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import org.junit.jupiter.api.function.Executable;
-import org.junit.jupiter.api.parallel.Execution;
 
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
@@ -36,7 +35,6 @@ public class TimeoutTest {
     public void assertTimeoutValidTest(){
         Executable executable = () -> calculator.delay(2);
         assertTimeout(Duration.of(3, ChronoUnit.SECONDS), executable);
-
     }
 
     @Disabled
@@ -44,6 +42,7 @@ public class TimeoutTest {
     public void assertTimeoutInvalidTest(){
         Executable executable = () -> calculator.delay(2);
         assertTimeout(Duration.of(3, ChronoUnit.NANOS), executable);
+
     }
 
     @Test
