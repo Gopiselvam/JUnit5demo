@@ -21,6 +21,7 @@
 	- TestInfoParameterResolver
 	- RepetitionInfoParameterResolver
 	- TestReporterParameterResolver
+14. Backward compatability
 
 **Java Tech stacks**
 - Storing a Roman letters in Enum
