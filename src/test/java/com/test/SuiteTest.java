@@ -1,8 +1,11 @@
 package com.test;
 
+import org.junit.jupiter.api.Test;
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.platform.suite.api.*;
 import org.junit.runner.RunWith;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages({"com.test"})
@@ -11,4 +14,9 @@ import org.junit.runner.RunWith;
 //@ExcludePackages("com.test.multiplyAndDivide")
 //@IncludePackages("com.test.multiplyAndDivide")
 public class SuiteTest {
+
+    @Test
+    void additionValidTest() {
+        assertTrue(true);
+    }
 }

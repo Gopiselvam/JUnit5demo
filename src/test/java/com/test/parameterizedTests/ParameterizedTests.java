@@ -21,20 +21,20 @@ public class ParameterizedTests {
 
     @ValueSource(strings = {"I", "X" , "C", "IX"})
     @ParameterizedTest
-    public void testRomanNumberExists(String romanNum){
+    void testRomanNumberExists(String romanNum){
         Assertions.assertTrue(RomanNumeral.contains(romanNum));
     }
 
     @NullAndEmptySource
     @ValueSource(strings = {" ", "", "\t", "\n", "  "})
     @ParameterizedTest
-    public void nullEmptyAndBlankStringTest(String valu){
+    void nullEmptyAndBlankStringTest(String valu){
         Assertions.assertTrue(valu == null || valu.trim().isEmpty());
     }
 
     @EnumSource(value = RomanNumeral.class, names = {"I", "V"})
     @ParameterizedTest
-    public void checkRomanWithEnum(RomanNumeral numeral){
+    void checkRomanWithEnum(RomanNumeral numeral){
         Assertions.assertTrue(RomanNumeral.contains(numeral.name()));
     }
 
@@ -46,19 +46,19 @@ public class ParameterizedTests {
     // csv source test
     @CsvSource({"10,5,2","101,5,20"})
     @ParameterizedTest
-    public void divisionTestWithCSV(int a , int b, int result){
+    void divisionTestWithCSV(int a , int b, int result){
         Assertions.assertEquals(result, calculator.division(a,b));
     }
 
     @CsvFileSource(resources = "/input.csv", delimiter = ';')
     @ParameterizedTest
-    public void multiplicationTestWithCSVfile(int a, int b, int result){
+    void multiplicationTestWithCSVfile(int a, int b, int result){
         Assertions.assertEquals(result, calculator.multiplication(a,b));
     }
 
     @ArgumentsSource(MyArgumentsProvider.class)
     @ParameterizedTest
-    public void romanNumberTestWithArgumentProvider(String input){
+    void romanNumberTestWithArgumentProvider(String input){
         Assertions.assertTrue(RomanNumeral.contains(input));
     }
 }
