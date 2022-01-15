@@ -1,4 +1,4 @@
-**Hibernate Advanced concepts**
+**JUnit5**
 1. JUnit5 new tags
 2. Test Fixture
 3. Test Suite
@@ -22,6 +22,21 @@
 	- RepetitionInfoParameterResolver
 	- TestReporterParameterResolver
 14. Backward compatability
+
+**Mockito**
+1. Mocking basics Mockito.mock()
+2. when(), thenReturn(), thenThrow() methods
+3. doNothing(), doThrow() methods
+4. Argument Matchers - any(), anyString(), anyInt(), eq(), anyList(), same(), isNull(), isNotNull()
+5. verify() method
+6. Argument captor
+7. Mockito.spy()
+8. Annotations
+	- @RunWith(MockitoJUnitRunner.class)
+	- @Mock
+	- @InjectMock
+	- @Captor
+	- @Spy
 
 **Java Tech stacks**
 - Storing a Roman letters in Enum
